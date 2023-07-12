@@ -1,0 +1,117 @@
+.About {
+  background-color: #f2f2f2;
+  padding: 10rem 5rem;
+}
+.Container {
+  max-width: 200rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4rem;
+}
+.Container h1 {
+  color: #000;
+  font-size: 6rem;
+  line-height: 1.2;
+}
+.Text {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 100;
+}
+.Cap {
+  grid-column: 2 /4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  max-width: 60rem;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 4rem;
+}
+.Cap span div:not(:last-child) {
+  font-size: 3rem;
+  color: #000;
+  font-weight: 600;
+}
+.Cap span div:not(:first-child) {
+  color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 1000px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    margin: auto;
+  }
+  .Text:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .Cap span {
+    line-height: 1.1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .About {
+    padding-inline: 2.5rem;
+  }
+}
+.about__pictures {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.about_pic {
+  display: flex;
+}
+@media only screen and (max-width: 50em) {
+  .about__pictures__one {
+    width: 80%;
+  }
+}
+.about__pictures__two {
+  display: flex;
+}
+@media only screen and (max-width: 50em) {
+  .about__pictures__two {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 81.25em) {
+  .about__pictures {
+    flex-wrap: wrap;
+  }
+}
+.about__pictures__picture__1 {
+  transform: rotate(-15deg) translateX(8rem);
+}
+@media only screen and (max-width: 48.125em) {
+  .about__pictures__picture__1 {
+    transform: rotate(-15deg) translateX(2rem);
+    width: 45%;
+  }
+}
+.about__pictures__picture__2 {
+  transform: rotate(20deg);
+  z-index: 2;
+}
+.about__pictures__picture__3 {
+  z-index: 1;
+}
+@media only screen and (max-width: 75em) {
+  .about__pictures__picture__3 {
+    transform: rotate(15deg);
+  }
+}
+@media only screen and (max-width: 50em) {
+  .about__pictures__picture__3,
+  .about__pictures__picture__2 {
+    width: 45%;
+  }
+}
+.about__pictures__picture__4 {
+  transform: rotate(-15deg) translateX(-8rem);
+  max-width: 40rem;
+}
+@media only screen and (max-width: 50em) {
+  .about__pictures__picture__4 {
+    width: 45%;
+  }
+}

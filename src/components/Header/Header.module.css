@@ -1,0 +1,31 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  align-items: center;
+  font-family: 500;
+}
+.Header ul {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+}
+
+.Header ul li:not(:last-child) {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.Header button {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  border: 0;
+  color: #ffff;
+  font: inherit;
+}
+@media only screen and (max-width: 1000px) {
+  .Header ul {
+    display: none;
+  }
+}

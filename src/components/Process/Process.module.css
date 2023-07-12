@@ -1,0 +1,124 @@
+.Process {
+  padding: 10rem 4rem;
+
+  background-color: #000;
+}
+.Process h2 {
+  font-size: 6.5rem;
+  color: #ffff;
+  line-height: 1.1;
+  letter-spacing: -3px;
+}
+.Container {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+  margin: auto;
+  max-width: 150rem;
+}
+.Process h2 span {
+  background-image: linear-gradient(to right, #bd10c3, #cd1590);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.Process button {
+  background: linear-gradient(to top right, #bd10c3, #cd1590, #d2177e, #f3a3a3);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  width: 25rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 0;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.Process button span:not(:first-child) {
+  background-color: #fff;
+}
+.ArrowLeft {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 6rem;
+  color: black;
+  display: grid;
+  place-items: center;
+  border-radius: 10rem;
+}
+.Content {
+  margin-block: 2rem;
+}
+.Boxes {
+  background-image: linear-gradient(
+    to top right,
+    #bd10c3,
+    #cd1590,
+    #d2177e,
+    #f3a3a3,
+    #6183f3
+  );
+  padding: 4rem;
+}
+.Box {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-column-gap: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.Box h3 {
+  background-image: linear-gradient(to right, #bd10c3, #cd1590, #f3a3a3);
+  font-weight: 600;
+  font-size: 3rem;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+.Head {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.Box div {
+  color: #000;
+  line-height: 1.5;
+}
+.Box:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Process h2 {
+    font-size: 4.5rem;
+  }
+  .Process {
+    padding-inline: 2.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Boxes {
+    padding: 2rem;
+  }
+  .Box {
+    padding: 1rem;
+  }
+}

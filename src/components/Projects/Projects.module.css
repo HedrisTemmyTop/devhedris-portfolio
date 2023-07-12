@@ -1,0 +1,131 @@
+.Projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-column-gap: 4rem;
+  align-items: start;
+  background-color: #f2f2f2;
+  padding: 10rem 4rem;
+}
+.Head {
+  color: #000;
+}
+.Head h2 {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.HeadText {
+  font-size: 1.8rem;
+}
+
+.Head h2 span {
+  background-image: linear-gradient(to right, #bd10c3, #cd1590);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.Box {
+  padding-block: 3rem;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  margin-top: 2rem;
+}
+.Box img {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Buttons {
+  display: flex;
+  padding: 3rem;
+  margin-block: 2rem;
+  flex-wrap: wrap;
+}
+
+.Buttons button {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: black;
+  background-color: #efefef;
+  border-radius: 1.8rem;
+  border: 0;
+}
+
+.Buttons button:not(:last-child) {
+  margin-right: 1rem;
+}
+.View {
+  font-weight: 100;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 0;
+}
+
+.Icon {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #bd10c3, #cd1590, #f3a3a3);
+  margin-left: 2rem;
+}
+.Content {
+  color: #000;
+  padding-inline: 3rem;
+}
+.content {
+  background: linear-gradient(to top right, #bd10c3, #cd1590, #d2177e, #f3a3a3);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  width: 25rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 0;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.ArrowLeft {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 6rem;
+  color: black;
+  display: grid;
+  place-items: center;
+  border-radius: 10rem;
+}
+.content span:not(:first-child) {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Projects {
+    grid-template-columns: 1fr;
+  }
+  .Grid {
+    max-width: 70rem;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Buttons {
+    margin-block: 0;
+  }
+  .Buttons button {
+    margin-top: 1.5rem;
+  }
+  .Head h2 {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,92 @@
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-block: 5rem;
+  padding-inline: 5rem;
+  margin-bottom: 10rem;
+}
+.HeroLeft {
+  max-width: 70rem;
+  flex: 1;
+}
+
+.HeroHead span {
+  font-size: 6.5rem;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -3px;
+}
+.HeroHead span:not(:last-child) {
+  background-image: linear-gradient(to right, #bd10c3, #cd1590);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.HeroText {
+  margin-top: 2rem;
+}
+main button {
+  background: linear-gradient(to top right, #bd10c3, #cd1590, #d2177e, #f3a3a3);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  width: 25rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 0;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.ArrowLeft {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 6rem;
+  color: black;
+  display: grid;
+  place-items: center;
+  border-radius: 10rem;
+}
+main button span:not(:first-child) {
+  background-color: #fff;
+}
+
+.HeroRight {
+  flex-basis: 35%;
+  margin-left: 4rem;
+}
+
+.HeroRight img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 901px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .HeroRight {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+  .HeroRight img {
+    width: 80%;
+    max-width: 70rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .HeroHead span {
+    font-size: 4.5rem;
+  }
+}
