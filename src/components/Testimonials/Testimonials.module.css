@@ -1,0 +1,55 @@
+.BoxGradient {
+  position: absolute;
+  background-image: linear-gradient(
+    90deg,
+    #bd10c3,
+    #cd1590 28%,
+    #f3a3a3,
+    #d2177e 60%
+  );
+  height: 5px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  left: 0;
+}
+.Testimonials {
+  background-color: #000;
+  padding: 10rem 5rem;
+}
+.Head {
+  display: grid;
+  place-items: center;
+}
+.Head h2 {
+  color: #fff;
+  font-size: 6rem;
+  line-height: 1;
+}
+.Cap {
+  font-size: 1.6rem;
+}
+.Head h2 span {
+  background-image: linear-gradient(to right, #bd10c3, #cd1590);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Container {
+  margin: auto;
+}
+.stars {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.stars img {
+  max-width: 5rem !important;
+  max-height: 5rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .Testimonials {
+    padding-inline: 2.5rem;
+  }
+}

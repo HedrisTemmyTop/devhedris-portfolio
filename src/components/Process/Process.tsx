@@ -1,3 +1,6 @@
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useRef, useEffect } from "react";
+
 import Box from "./Box/Box";
 import classes from "./Process.module.css";
 
@@ -25,8 +28,14 @@ const data = [
 ];
 
 const Process = () => {
+  const ref = useRef(null);
+  const mainControls = useAnimation();
+  const isInview = useInView(ref, { once: true });
+  useEffect(() => {
+    if (isInview) mainControls.start("visible");
+  }, [isInview]);
   return (
-    <section className={classes.Process}>
+    <section className={classes.Process} ref={ref}>
       <div className={classes.Container}>
         <div className={classes.Right}>
           <h2>
@@ -42,16 +51,32 @@ const Process = () => {
           </button>
         </div>
         <div className={classes.Left}>
-          <div className={classes.Boxes}>
+          <motion.div
+            className={classes.Boxes}
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: 75,
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             {data.map((data) => (
               <Box
                 title={data.title}
                 id={data.id}
                 key={data.id}
                 text={data.text}
+                index={Number(data.id)}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

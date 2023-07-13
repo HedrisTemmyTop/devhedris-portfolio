@@ -2,10 +2,18 @@ import classes from "./About.module.css";
 import img2 from "../../assets/images/image1.jpeg";
 import img3 from "../../assets/images/image2.jpeg";
 import img1 from "../../assets/images/image3.jpeg";
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 const About = () => {
+  const ref = useRef(null);
+  const mainControls = useAnimation();
+  const isInview = useInView(ref, { once: true });
+  useEffect(() => {
+    if (isInview) mainControls.start("visible");
+  }, [isInview]);
   return (
-    <section className={classes.About}>
+    <section className={classes.About} id="about">
       <div className={classes.Container}>
         <div className={classes.Head}>
           <h1>Hedris</h1>
@@ -36,27 +44,49 @@ const About = () => {
           </span>
         </div>
       </div>
-      <div className={classes.about__pictures}>
+      <div className={classes.about__pictures} ref={ref}>
         <div
           className={[classes.about__pictures__one, classes.about_pic].join(
             " "
           )}
         >
-          <img
+          <motion.img
             src={img1}
             alt=""
             className={[
               classes.about__pictures__picture,
               classes.about__pictures__picture__1,
             ].join(" ")}
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+              },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.5, delay: 0.25 }}
           />
-          <img
+          <motion.img
             src={img2}
             alt=""
             className={[
               classes.about__pictures__picture,
               classes.about__pictures__picture__2,
             ].join(" ")}
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+              },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.5, delay: 0.5 }}
           />
         </div>
         <div
@@ -64,21 +94,43 @@ const About = () => {
             " "
           )}
         >
-          <img
+          <motion.img
             src={img3}
             alt=""
             className={[
               classes.about__pictures__picture,
               classes.about__pictures__picture__3,
             ].join(" ")}
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+              },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.5, delay: 0.75 }}
           />
-          <img
+          <motion.img
             src={img1}
             alt=""
             className={[
               classes.about__pictures__picture,
               classes.about__pictures__picture__4,
             ].join(" ")}
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+              },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.5, delay: 1 }}
           />
         </div>
       </div>

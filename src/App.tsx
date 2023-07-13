@@ -6,6 +6,8 @@ import Services from "./components/Services/Services";
 import Projects from "./components/Projects/Projects";
 import Process from "./components/Process/Process";
 import About from "./components/About/About";
+import Testimonails from "./components/Testimonials/Testimonial";
+import Footer from "./components/Footer/Footer";
 const hero = {
   borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
 };
@@ -24,6 +26,8 @@ const App = () => {
       <Projects />
       <Process />
       <About />
+      <Testimonails />
+      <Footer />
     </div>
   );
 };

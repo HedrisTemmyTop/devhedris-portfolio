@@ -3,7 +3,8 @@ import fenkie from "../../assets/images/fenkei.jpg";
 import mandilas from "../../assets/images/mandillasmarket.jpg";
 import africommerce from "../../assets/images/africomerce.jpg";
 import mapty from "../../assets/images/mapty.jpeg";
-
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useRef, useEffect } from "react";
 import Box from "./Box/Box";
 
 const data = [
@@ -48,10 +49,31 @@ const data2 = [
   },
 ];
 const Projects = () => {
+  const ref = useRef(null);
+  const mainControls = useAnimation();
+  const isInview = useInView(ref, { once: true });
+  useEffect(() => {
+    if (isInview) mainControls.start("visible");
+  }, [isInview]);
   return (
-    <section className={classes.Projects}>
+    <section className={classes.Projects} ref={ref} id="projects">
       <div className={classes.Grid}>
-        <div className={classes.Head}>
+        <motion.div
+          className={classes.Head}
+          variants={{
+            hidden: {
+              opacity: 0,
+              x: -75,
+            },
+            visible: {
+              opacity: 1,
+              x: 0,
+            },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
           <h2>
             Selected <span>Projects</span>
           </h2>
@@ -60,7 +82,7 @@ const Projects = () => {
             various stages to create some truly unique products. Here are a few
             that I feel were the most challenging yet rewarding.
           </div>
-        </div>
+        </motion.div>
         <div>
           {data.map((box) => (
             <Box
@@ -70,6 +92,7 @@ const Projects = () => {
               content={box.content}
               buttons={box.buttons}
               key={box.id}
+              box={ref}
             />
           ))}
         </div>
@@ -84,6 +107,7 @@ const Projects = () => {
               content={box.content}
               buttons={box.buttons}
               key={box.id}
+              box={ref}
             />
           ))}
         </div>

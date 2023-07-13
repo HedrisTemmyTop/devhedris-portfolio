@@ -12,7 +12,7 @@ const text = {
 
 const Companies = (): JSX.Element => {
   return (
-    <div>
+    <div className="marquee">
       <div style={text}>Trusted By Top Tech Companies </div>
       <div>
         <img src={pritom} alt="company" />
