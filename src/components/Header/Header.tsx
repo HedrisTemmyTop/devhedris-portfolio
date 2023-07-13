@@ -34,11 +34,6 @@ const Header = () => {
             Blog
           </a>
         </li>
-        <li className={classes.nav__list}>
-          <a href="#contact-me" className={classes.nav__link}>
-            Contact Me
-          </a>
-        </li>
       </ul>
       <aside>
         <div
@@ -90,7 +85,9 @@ const Header = () => {
             </a>
           </li> */}
         </div>
-        <button>Contact Me</button>
+        <a href="#contact-me">
+          <button>Contact Me</button>
+        </a>
       </aside>
     </header>
   );
