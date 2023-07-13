@@ -1,6 +1,6 @@
 import star from "../../../assets/icons/stars.svg";
 import client1 from "../../../assets/images/client1.png";
-import client2 from "../../../assets/images/client2.png";
+
 import classes from "../Testimonials.module.css";
 import "../../../App.css";
 const Box = () => {

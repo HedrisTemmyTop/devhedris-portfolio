@@ -1,8 +1,6 @@
 import Box from "./Box/Box";
 import classes from "./Services.module.css";
 import service1 from "../../assets/icons/service1.svg";
-import service2 from "../../assets/icons/service2.svg";
-import service3 from "../../assets/icons/service3.svg";
 
 const Services = () => {
   const data = [
