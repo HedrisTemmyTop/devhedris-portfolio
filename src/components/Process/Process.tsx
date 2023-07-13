@@ -45,10 +45,12 @@ const Process = () => {
             I discover this process working more than 10+ in the design industry
             that why you can trust blindly
           </div>
-          <button>
-            <span>Book A FREE call</span>
-            <span className={classes.ArrowLeft}>→</span>
-          </button>
+          <a href="tel:+2348161126466">
+            <button>
+              <span>Book A FREE call</span>
+              <span className={classes.ArrowLeft}>→</span>
+            </button>
+          </a>
         </div>
         <div className={classes.Left}>
           <motion.div
@@ -56,7 +58,7 @@ const Process = () => {
             variants={{
               hidden: {
                 opacity: 0,
-                y: 75,
+                y: 100,
               },
               visible: {
                 opacity: 1,

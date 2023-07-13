@@ -22,7 +22,7 @@ const Box = (props: BoxInterface) => {
       variants={{
         hidden: {
           opacity: 0,
-          y: 75,
+          y: 200,
         },
         visible: {
           opacity: 1,
@@ -31,7 +31,7 @@ const Box = (props: BoxInterface) => {
       }}
       initial="hidden"
       animate={mainControls}
-      transition={{ duration: 0.5, delay: 0.25 }}
+      transition={{ duration: 0.25, delay: 0.1 }}
       className={classes.Box}
       ref={ref}
     >

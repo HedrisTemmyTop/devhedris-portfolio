@@ -16,7 +16,7 @@ const Hero = () => {
           variants={{
             hidden: {
               opacity: 0,
-              x: -75,
+              x: -1000,
             },
             visible: {
               opacity: 1,
@@ -25,22 +25,53 @@ const Hero = () => {
           }}
           initial="hidden"
           animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.25 }}
+          transition={{ duration: 1, delay: 0.5 }}
           className={classes.HeroHead}
         >
           <span>Frontend Engineer</span>
           <span> crafting products that people love</span>
         </motion.div>
-        <motion.div className={classes.HeroText}>
+        <motion.div
+          className={classes.HeroText}
+          variants={{
+            hidden: {
+              opacity: 0,
+              x: 1000,
+            },
+            visible: {
+              opacity: 1,
+              x: 0,
+            },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 1, delay: 0.25 }}
+        >
           I'm Hedris Temitope— a junior developer who works with startups
           looking to push creative boundaries and create unique user experiences
           with high Level experience in web design and development knowledge,
           producing quality work
         </motion.div>
-          <button>
+        <a href="tel:+2348161126466">
+          <motion.button
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: 1000,
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 1, delay: 0.25 }}
+          >
             <span>Book A FREE call</span>
             <span className="ArrowLeft">→</span>
-          </button>
+          </motion.button>
+        </a>
       </div>
       <div className={classes.HeroRight} ref={ref}>
         <motion.div
@@ -48,7 +79,7 @@ const Hero = () => {
           variants={{
             hidden: {
               opacity: 0,
-              y: 75,
+              y: 1000,
             },
             visible: {
               opacity: 1,
@@ -57,7 +88,7 @@ const Hero = () => {
           }}
           initial="hidden"
           animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.25 }}
+          transition={{ duration: 1, delay: 0.25 }}
         >
           <img src={myImg} alt="user" />
         </motion.div>

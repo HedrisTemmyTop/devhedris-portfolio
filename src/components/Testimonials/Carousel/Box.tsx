@@ -1,5 +1,5 @@
 import star from "../../../assets/icons/stars.svg";
-import client1 from "../../../assets/images/client1.png";
+import client1 from "../../../assets/images/client1.jpg";
 
 import classes from "../Testimonials.module.css";
 import "../../../App.css";
