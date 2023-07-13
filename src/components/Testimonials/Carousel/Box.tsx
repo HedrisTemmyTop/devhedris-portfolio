@@ -19,9 +19,8 @@ const Box = () => {
         -- Working with Pritom was a breeze... I was impressed. --
       </h2>
       <p className="text testimony__text text-margin-top">
-        "Honestly I felt like Superflow saw my vision and helped it come to life
-        exactly how I pictured it. The support from Temmy was amazing. He was
-        happy to help with everything and SO EASY to work with."
+        "Temmy is a great guy who has a perfect eye for design He built an
+        icredible website for my school."
       </p>
       <div className="testimony__user">
         <img src={client1} alt="" className="testimony__user--img" />
