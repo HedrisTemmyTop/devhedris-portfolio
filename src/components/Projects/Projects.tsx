@@ -111,10 +111,12 @@ const Projects = () => {
             />
           ))}
         </div>
-        <button className={classes.content}>
-          <span>View All Projects</span>
-          <span className={classes.ArrowLeft}>→</span>
-        </button>
+        <a href="https://hedris-all-projects.netlify.app/" target="_blank">
+          <button className={classes.content}>
+            <span>View All Projects</span>
+            <span className={classes.ArrowLeft}>→</span>
+          </button>
+        </a>
       </div>
     </section>
   );
