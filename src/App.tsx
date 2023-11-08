@@ -8,6 +8,7 @@ import Process from "./components/Process/Process";
 import About from "./components/About/About";
 import Testimonails from "./components/Testimonials/Testimonial";
 import Footer from "./components/Footer/Footer";
+import Meta from "./components/Meta/Meta";
 const hero = {
   borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
 };
@@ -15,6 +16,7 @@ const hero = {
 const App = () => {
   return (
     <div className="app">
+      <Meta />
       <div className="hero" style={hero}>
         <Header />
         <Hero />

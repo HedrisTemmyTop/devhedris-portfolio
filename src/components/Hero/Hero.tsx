@@ -8,7 +8,7 @@ const Hero = () => {
   const isInview = useInView(ref, { once: true });
   useEffect(() => {
     if (isInview) mainControls.start("visible");
-  }, [isInview]);
+  }, [isInview, mainControls]);
   return (
     <main>
       <div className={classes.HeroLeft}>
@@ -47,10 +47,10 @@ const Hero = () => {
           animate={mainControls}
           transition={{ duration: 1, delay: 0.25 }}
         >
-          I'm Hedris Temitope— a junior developer who works with startups
-          looking to push creative boundaries and create unique user experiences
-          with high Level experience in web design and development knowledge,
-          producing quality work
+          I'm Hedris Temitope— a Fullstack developer passionate about createing
+          innovative and user-centric web applications. I have solid experience
+          in building solid cutting-edge application with a profound knowledge
+          in React Js | Typescript | Node Js | Express Js | MongoDB
         </motion.div>
         <a href="tel:+2348161126466">
           <motion.button
