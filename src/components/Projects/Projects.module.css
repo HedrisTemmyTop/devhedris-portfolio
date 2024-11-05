@@ -22,6 +22,7 @@
 .Head h2 span {
   background-image: linear-gradient(to right, #bd10c3, #cd1590);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .Box {
