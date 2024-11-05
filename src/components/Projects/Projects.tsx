@@ -1,21 +1,28 @@
-import classes from "./Projects.module.css";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+import africommerce from "../../assets/images/africomerce.jpg";
 import fenkie from "../../assets/images/fenkei.jpg";
 import mandilas from "../../assets/images/mandillasmarket.jpg";
-import africommerce from "../../assets/images/africomerce.jpg";
-import mapty from "../../assets/images/mapty.jpeg";
-import { motion, useInView, useAnimation } from "framer-motion";
-import { useRef, useEffect } from "react";
+import taaskly from "../../assets/images/og2.png";
 import Box from "./Box/Box";
+import classes from "./Projects.module.css";
 
 const data = [
   {
     id: 1,
-    image: fenkie,
-    link: "https://fenkei.vercel.app/",
-    name: "Fenkei",
-    buttons: ["REACT", "REDUX", "REACT TESTING", "JEST"],
+    image: taaskly,
+    link: "http://devhedris-taaskly-booking.vercel.app/",
+    name: "Taaskyly Bookings",
+    buttons: [
+      "NEXTJS",
+      "TYPESRIPT",
+      "MONGODB",
+      "TWILIO",
+      "NODE MAILER",
+      "SUPABASE",
+    ],
     content:
-      "Fenkei is a blog app platform that allows users to create, publish, and share their written content with the world. It provides a streamlined and user-friendly interface for bloggers to create and publish their posts, as well as tools for managing their content and engaging with their audience.    ",
+      "A booking platform where users could create booking profile by signing up and create a booking service with their pricing including the availability, user's customer are allowed to book an appointment and pay the amount designated by the owner. User's could withdraw their money generated from their appointments ",
   },
 
   {
@@ -40,12 +47,12 @@ const data2 = [
   },
   {
     id: 2,
-    image: mapty,
-    link: "https://hedris-workout-mapty.netlify.app/",
-    name: "Hedris Mapty Workout",
-    buttons: ["HTML", "CSS", "JAVASCRIPT"],
+    image: fenkie,
+    link: "https://fenkei.vercel.app/",
+    name: "Fenkei",
+    buttons: ["REACT", "REDUX", "REACT TESTING", "JEST"],
     content:
-      "                     A workout application that loads users current location on a map and allows them to input their current exercise and user will be able to track their workout with the use of localstorage. I created this the use of object oriented programming in javascript (OOP)      ",
+      "Fenkei is a blog app platform that allows users to create, publish, and share their written content with the world. It provides a streamlined and user-friendly interface for bloggers to create and publish their posts, as well as tools for managing their content and engaging with their audience.    ",
   },
 ];
 const Projects = () => {

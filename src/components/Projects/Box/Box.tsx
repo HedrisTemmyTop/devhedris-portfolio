@@ -16,7 +16,7 @@ const Box = (props: BoxInterface) => {
   const isInview = useInView(ref, { once: true });
   useEffect(() => {
     if (isInview) mainControls.start("visible");
-  }, [isInview]);
+  }, [isInview, mainControls]);
   return (
     <motion.div
       variants={{

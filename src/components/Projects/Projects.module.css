@@ -43,6 +43,7 @@
   padding: 3rem;
   margin-block: 2rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .Buttons button {
@@ -54,9 +55,6 @@
   border: 0;
 }
 
-.Buttons button:not(:last-child) {
-  margin-right: 1rem;
-}
 .View {
   font-weight: 100;
   font-size: 2rem;
@@ -64,6 +62,9 @@
   margin-top: 2rem;
   background-color: transparent;
   border: 0;
+}
+.View span:first-child {
+  color: black;
 }
 
 .Icon {
