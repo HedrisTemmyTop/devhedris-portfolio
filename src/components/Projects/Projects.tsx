@@ -6,8 +6,29 @@ import mandilas from "../../assets/images/mandillasmarket.jpg";
 import taaskly from "../../assets/images/og2.png";
 import Box from "./Box/Box";
 import classes from "./Projects.module.css";
+import clapmi from "../../assets/images/clapmi.png";
 
 const data = [
+  {
+    id: 1,
+    image: clapmi,
+    link: "https://clapmi.com/",
+    name: "Clapmi",
+    buttons: ["NUXTJS", "TYPESCRIPT", "PINIA", "TAILWIND CSS"],
+    content:
+      "Clapmi is the revolutionary competitive livestreaming platform where creators showcase their skills and both creators and fans win together.",
+  },
+  {
+    id: 2,
+    image: africommerce,
+    link: "https://africommerce-saas.vercel.app/",
+    name: "Africommerce",
+    buttons: ["REACT", "NODE JS", "MONGO DB TESTING", "JEST"],
+    content:
+      "                     An open source e-commerce platform, i made the home page responsive and made the necessary API calls. I created the responsive product paga and also contribute in the user's team    ",
+  },
+];
+const data2 = [
   {
     id: 1,
     image: taaskly,
@@ -23,27 +44,6 @@ const data = [
     ],
     content:
       "A booking platform where users could create booking profile by signing up and create a booking service with their pricing including the availability, user's customer are allowed to book an appointment and pay the amount designated by the owner. User's could withdraw their money generated from their appointments ",
-  },
-
-  {
-    id: 2,
-    image: mandilas,
-    link: "https://www.mandilasmarket.com/",
-    name: "Mandilas Market",
-    buttons: ["REACT", "REDUX", "TAILWIND"],
-    content:
-      "            Worked on developing and maintaining an e-commerce website that provided a seamless shopping experience for users. I collaborated with a team of developers and designers to create a modern and user-friendly interface that allowed customers to browse and purchase products with ease.      ",
-  },
-];
-const data2 = [
-  {
-    id: 1,
-    image: africommerce,
-    link: "https://africommerce-saas.vercel.app/",
-    name: "Africommerce",
-    buttons: ["REACT", "NODE JS", "MONGO DB TESTING", "JEST"],
-    content:
-      "                     An open source e-commerce platform, i made the home page responsive and made the necessary API calls. I created the responsive product paga and also contribute in the user's team    ",
   },
   {
     id: 2,
