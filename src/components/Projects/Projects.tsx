@@ -2,7 +2,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import africommerce from "../../assets/images/africomerce.jpg";
 import fenkie from "../../assets/images/fenkei.jpg";
-import mandilas from "../../assets/images/mandillasmarket.jpg";
+
 import taaskly from "../../assets/images/og2.png";
 import Box from "./Box/Box";
 import classes from "./Projects.module.css";
