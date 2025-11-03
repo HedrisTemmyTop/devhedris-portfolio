@@ -28,7 +28,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className={classes.HeroHead}
         >
-          <span>Frontend Engineer</span>
+          <span>Full-Stack Engineer</span>
           <span> crafting products that people love</span>
         </motion.div>
         <motion.div
@@ -47,10 +47,10 @@ const Hero = () => {
           animate={mainControls}
           transition={{ duration: 1, delay: 0.25 }}
         >
-          I'm Hedris Temitope— a Fullstack developer passionate about createing
+          I'm Hedris Temitope— a Full-Stack Engineer passionate about createing
           innovative and user-centric web applications. I have solid experience
           in building solid cutting-edge application with a profound knowledge
-          in React Js | Typescript | Node Js | Express Js | MongoDB
+          in React Js | Typescript | Node Js | Express Js | MongoDB ....
         </motion.div>
         <a href="tel:+2348161126466">
           <motion.button
