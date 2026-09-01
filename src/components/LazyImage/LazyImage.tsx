@@ -9,9 +9,7 @@ export const LazyImage = ({ src, alt, className, style, ...props }: ImgHTMLAttri
       src={src} 
       alt={alt} 
       loading="lazy"
-      onLoad={() => {
-        setTimeout(() => setLoaded(true), 5000);
-      }}
+      onLoad={() => setLoaded(true)}
       className={`${className || ''} ${!loaded ? classes.skeleton : ''}`}
       style={{
         ...style,
