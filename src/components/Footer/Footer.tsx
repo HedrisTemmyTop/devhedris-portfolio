@@ -1,5 +1,6 @@
 import email from "../../assets/icons/61fa2fddbcda0616c1faa395_Mail Icon.svg";
 import phone from "../../assets/icons/61fa307e4c3858f26c8df537_Phone Icon.svg";
+import { LazyImage } from "../LazyImage/LazyImage";
 
 const Footer = () => {
   return (
@@ -14,9 +15,10 @@ const Footer = () => {
             <span className="heading__1--gradient"> together</span>
           </h2>
           <p className="text services__text ">
-            I'm Hedris TemmyTop— a Frontend engineer.We provide the perfect
-            blend of people and technology. Our approach to problem-solving &
-            strategic planning will help you deliver exceptional services.
+            I'm Hedris TemmyTop— a FullStack Software Engineer.We provide the
+            perfect blend of people and technology. Our approach to
+            problem-solving & strategic planning will help you deliver
+            exceptional services.
           </p>
           <a href="tel:+2348161126466">
             <button className="book">
@@ -35,7 +37,7 @@ const Footer = () => {
                 <button className="email">
                   {" "}
                   <span>
-                    <img src={email} alt="" />
+                    <LazyImage src={email} alt="" />
                   </span>{" "}
                   <h2 className="email--head">hello@hedris.com</h2>
                 </button>
@@ -46,7 +48,7 @@ const Footer = () => {
                 <button className="email">
                   {" "}
                   <span>
-                    <img src={phone} alt="" />
+                    <LazyImage src={phone} alt="" />
                   </span>{" "}
                   <h2 className="email--head">+2348161126466</h2>
                 </button>

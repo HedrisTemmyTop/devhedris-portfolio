@@ -1,5 +1,6 @@
 import classes from "./Hero.module.css";
 import myImg from "../../assets/images/myimage.jpeg";
+import { LazyImage } from "../LazyImage/LazyImage";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
 const Hero = () => {
@@ -28,7 +29,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className={classes.HeroHead}
         >
-          <span>Full-Stack Engineer</span>
+          <span>Software Engineer</span>
           <span> crafting products that people love</span>
         </motion.div>
         <motion.div
@@ -47,10 +48,11 @@ const Hero = () => {
           animate={mainControls}
           transition={{ duration: 1, delay: 0.25 }}
         >
-          I'm Hedris Temitope— a Full-Stack Engineer passionate about createing
-          innovative and user-centric web applications. I have solid experience
-          in building solid cutting-edge application with a profound knowledge
-          in React Js | Typescript | Node Js | Express Js | MongoDB ....
+          I'm Hedris Temitope— a Full-Stack Software Engineer passionate about
+          createing innovative and user-centric web applications. I have solid
+          experience in building solid cutting-edge application with a profound
+          knowledge in React Js | Typescript | Node Js | Express Js | MongoDB
+          ....
         </motion.div>
         <a href="tel:+2348161126466">
           <motion.button
@@ -90,7 +92,7 @@ const Hero = () => {
           animate={mainControls}
           transition={{ duration: 1, delay: 0.25 }}
         >
-          <img src={myImg} alt="user" />
+          <LazyImage src={myImg} alt="user" />
         </motion.div>
       </div>
     </main>

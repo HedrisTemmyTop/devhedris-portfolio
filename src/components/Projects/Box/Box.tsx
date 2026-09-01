@@ -1,4 +1,5 @@
 import classes from "../Projects.module.css";
+import { LazyImage } from "../../LazyImage/LazyImage";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
 interface BoxInterface {
@@ -36,7 +37,7 @@ const Box = (props: BoxInterface) => {
       ref={ref}
     >
       <a href={props.link} target="_blank" className={classes.Box}>
-        <img src={props.image} alt="project" />
+        <LazyImage src={props.image} alt="project" />
         <div className={classes.Buttons}>
           {props.buttons.map((button) => (
             <button key={button}>{button}</button>

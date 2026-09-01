@@ -35,7 +35,7 @@ const About = () => {
             <div>Projects done</div>
           </span>
           <span>
-            <div>02+</div>
+            <div>04+</div>
             <div>Years experience</div>
           </span>
           <span>
@@ -47,7 +47,7 @@ const About = () => {
       <div className={classes.about__pictures} ref={ref}>
         <div
           className={[classes.about__pictures__one, classes.about_pic].join(
-            " "
+            " ",
           )}
         >
           <motion.img
@@ -91,7 +91,7 @@ const About = () => {
         </div>
         <div
           className={[classes.about__pictures__two, classes.about_pic].join(
-            " "
+            " ",
           )}
         >
           <motion.img

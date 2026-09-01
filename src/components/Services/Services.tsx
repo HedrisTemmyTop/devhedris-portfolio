@@ -1,26 +1,28 @@
 import Box from "./Box/Box";
 import classes from "./Services.module.css";
 import service1 from "../../assets/icons/service1.svg";
+import service2 from "../../assets/icons/service2.svg";
+import service3 from "../../assets/icons/service3.svg";
 
 const Services = () => {
   const data = [
     {
       id: 1,
-      name: "Website Design",
-      text: "Ensuring technical feasibily of UI/UX design by providing clean and responsive website",
+      name: "Frontend Development",
+      text: "Building responsive, performant, and interactive user interfaces using modern frameworks like React and Next.js.",
       image: service1,
     },
     {
       id: 2,
-      name: "Website Design",
-      text: "Ensuring technical feasibily of UI/UX design by providing clean and responsive website",
-      image: service1,
+      name: "Backend Architecture",
+      text: "Designing and implementing scalable APIs, server-side logic, and robust database architectures using Node.js.",
+      image: service2,
     },
     {
       id: 3,
-      name: "Website Design",
-      text: "Ensuring technical feasibily of UI/UX design by providing clean and responsive website",
-      image: service1,
+      name: "Cloud & DevOps",
+      text: "Deploying robust applications, setting up CI/CD pipelines, and managing secure cloud infrastructure.",
+      image: service3,
     },
   ];
   return (

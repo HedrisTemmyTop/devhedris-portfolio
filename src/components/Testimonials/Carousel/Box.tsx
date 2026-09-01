@@ -1,5 +1,6 @@
 import star from "../../../assets/icons/stars.svg";
 import client1 from "../../../assets/images/client1.jpg";
+import { LazyImage } from "../../LazyImage/LazyImage";
 
 import classes from "../Testimonials.module.css";
 import "../../../App.css";
@@ -9,11 +10,11 @@ const Box = () => {
       <div className={classes.BoxGradient}></div>
 
       <div className={classes.stars}>
-        <img src={star} alt="" />
-        <img src={star} alt="" />
-        <img src={star} alt="" />
-        <img src={star} alt="" />
-        <img src={star} alt="" />
+        <LazyImage src={star} alt="" />
+        <LazyImage src={star} alt="" />
+        <LazyImage src={star} alt="" />
+        <LazyImage src={star} alt="" />
+        <LazyImage src={star} alt="" />
       </div>
       <h2 className="testimony__head">
         -- Working with Pritom was a breeze... I was impressed. --
@@ -23,7 +24,7 @@ const Box = () => {
         icredible website for my school."
       </p>
       <div className="testimony__user">
-        <img src={client1} alt="" className="testimony__user--img" />
+        <LazyImage src={client1} alt="" className="testimony__user--img" />
         <div className="testimony__user--details">
           <h2 className="testimony__user--details-name">Jessica Davies</h2>
           <p className="text">Prodct designer at kuda</p>

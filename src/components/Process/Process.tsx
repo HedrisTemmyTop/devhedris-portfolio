@@ -6,23 +6,23 @@ import classes from "./Process.module.css";
 
 const data = [
   {
-    title: "User Stories",
-    text: "Description of the app's functionalites from the user's perspective    ",
+    title: "Requirement Analysis",
+    text: "Understanding business needs, defining technical scope, and drafting comprehensive user stories and specifications.",
     id: "1",
   },
   {
-    title: "Feature",
-    text: "Gather the features that needs to be included in the application from the user stories",
+    title: "System Architecture",
+    text: "Designing scalable database schemas, selecting the right tech stack, and mapping out API endpoints.",
     id: "2",
   },
   {
-    title: "Flowchart & Architecture    ",
-    text: "Construct a software architecture based on the functionalities that needs to be included in the app.    ",
+    title: "Development & Testing",
+    text: "Writing clean, maintainable code across the frontend and backend, paired with rigorous automated and manual testing.",
     id: "3",
   },
   {
-    title: "Final hand off",
-    text: "Leverage the power of software architect to provide the flowchart and power product design to render a good layout.",
+    title: "Deployment & Handoff",
+    text: "Setting up CI/CD pipelines for seamless deployment, monitoring performance, and delivering comprehensive documentation.",
     id: "4",
   },
 ];
@@ -42,8 +42,7 @@ const Process = () => {
             My process that helps my clients to <span>2X their revenue</span>
           </h2>
           <div className={classes.Content}>
-            I discover this process working more than 10+ in the design industry
-            that why you can trust blindly
+            I have refined this engineering process over years of building full-stack applications, ensuring scalable and reliable delivery you can trust blindly.
           </div>
           <a href="tel:+2348161126466">
             <button>

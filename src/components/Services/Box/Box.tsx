@@ -1,4 +1,5 @@
 import classes from "../Services.module.css";
+import { LazyImage } from "../../LazyImage/LazyImage";
 
 interface BoxInterface {
   name: string;
@@ -10,7 +11,7 @@ const Box = (props: BoxInterface) => {
   return (
     <div className={classes.Box}>
       <div className={classes.BoxGradient}></div>
-      <img src={props.image} alt="box" />
+      <LazyImage src={props.image} alt="box" />
       <h2 className={classes.BoxName}> {props.name}</h2>
       <div>{props.text}</div>
     </div>

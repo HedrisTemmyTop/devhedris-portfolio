@@ -1,12 +1,13 @@
 import logo from "../../assets/icons/logo-user.svg";
 import classes from "./Header.module.css";
+import { LazyImage } from "../LazyImage/LazyImage";
 import { useState } from "react";
 const Header = () => {
   const [show, setShow] = useState(false);
   return (
     <header className={classes.Header} id="home">
       <aside>
-        <img src={logo} alt="logo" />
+        <LazyImage src={logo} alt="logo" />
       </aside>
       <ul>
         <li className={classes.nav__list}>

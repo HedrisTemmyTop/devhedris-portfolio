@@ -1,7 +1,7 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import africommerce from "../../assets/images/africomerce.jpg";
-import fenkie from "../../assets/images/fenkei.jpg";
+import figorr from "../../assets/images/figorr.jpg";
 
 import taaskly from "../../assets/images/og2.png";
 import Box from "./Box/Box";
@@ -9,6 +9,33 @@ import classes from "./Projects.module.css";
 import clapmi from "../../assets/images/clapmi.png";
 
 const data = [
+  {
+    id: 1,
+    image: figorr,
+    link: "https://figorr.com/",
+    name: "Figorr",
+    buttons: ["VueJs", "VueX", "BOOTSTRAP"],
+    content:
+      "Figorr provides real-time monitoring solutions for temperature-sensitive commodities, offering end-to-end visibility throughout the supply chain. It helps businesses optimize operations and ensure product integrity with streamlined inventory management.",
+  },
+  {
+    id: 2,
+    image: taaskly,
+    link: "http://devhedris-taaskly-booking.vercel.app/",
+    name: "Taaskyly Bookings",
+    buttons: [
+      "NEXTJS",
+      "TYPESRIPT",
+      "MONGODB",
+      "TWILIO",
+      "NODE MAILER",
+      "SUPABASE",
+    ],
+    content:
+      "A booking platform where users could create booking profile by signing up and create a booking service with their pricing including the availability, user's customer are allowed to book an appointment and pay the amount designated by the owner. User's could withdraw their money generated from their appointments ",
+  },
+];
+const data2 = [
   {
     id: 1,
     image: clapmi,
@@ -26,33 +53,6 @@ const data = [
     buttons: ["REACT", "NODE JS", "MONGO DB TESTING", "JEST"],
     content:
       "                     An open source e-commerce platform, i made the home page responsive and made the necessary API calls. I created the responsive product paga and also contribute in the user's team    ",
-  },
-];
-const data2 = [
-  {
-    id: 1,
-    image: taaskly,
-    link: "http://devhedris-taaskly-booking.vercel.app/",
-    name: "Taaskyly Bookings",
-    buttons: [
-      "NEXTJS",
-      "TYPESRIPT",
-      "MONGODB",
-      "TWILIO",
-      "NODE MAILER",
-      "SUPABASE",
-    ],
-    content:
-      "A booking platform where users could create booking profile by signing up and create a booking service with their pricing including the availability, user's customer are allowed to book an appointment and pay the amount designated by the owner. User's could withdraw their money generated from their appointments ",
-  },
-  {
-    id: 2,
-    image: fenkie,
-    link: "https://fenkei.vercel.app/",
-    name: "Fenkei",
-    buttons: ["REACT", "REDUX", "REACT TESTING", "JEST"],
-    content:
-      "Fenkei is a blog app platform that allows users to create, publish, and share their written content with the world. It provides a streamlined and user-friendly interface for bloggers to create and publish their posts, as well as tools for managing their content and engaging with their audience.    ",
   },
 ];
 const Projects = () => {
